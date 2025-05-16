@@ -4,7 +4,7 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: white;
   }
-  
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -13,14 +13,14 @@ body {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+
   /* Logo Styling */
   .logo {
     font-size: 2.5rem;
     font-weight: 400; /* Not bold */
     margin: 0;
   }
-  
+
   /* Desktop Navigation */
   #desktop-nav {
     display: flex;
@@ -30,7 +30,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
   .nav-links {
     display: flex;
     justify-content: center; 
@@ -38,7 +38,7 @@ body {
     text-align: center;     
     padding: 1rem;      
   }
-  
+
   .nav-links a {
     color: black;
     text-decoration: none;
@@ -46,24 +46,24 @@ body {
     padding: 10px 15px;
     transition: color 0.3s, background-color 0.3s;
   }
-  
+
   .nav-links a:hover {
     color: white;
     background-color: grey;
     border-radius: 5px;
   }
-  
+
   /* Mobile Navigation */
   #hamburguer-nav {
     display: none;
   }
-  
+
   .hamburguer-menu {
     position: relative;
     display: flex;
     align-items: center;
   }
-  
+
   .hamburguer-icon {
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ body {
     width: 30px;
     cursor: pointer;
   }
-  
+
   .hamburguer-icon span {
     background-color: black;
     height: 4px;
@@ -80,7 +80,7 @@ body {
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
-  
+
   .menu-links {
     display: none;
     flex-direction: column;
@@ -93,11 +93,11 @@ body {
     overflow: hidden;
     z-index: 10;
   }
-  
+
   .menu-links li {
     list-style: none;
   }
-  
+
   .menu-links a {
     display: block;
     padding: 10px 20px;
@@ -106,35 +106,35 @@ body {
     font-size: 1.2rem;
     transition: background-color 0.3s, color 0.3s;
   }
-  
+
   .menu-links a:hover {
     background-color: grey;
     color: white;
   }
-  
+
   /* Open State for Hamburger Menu */
   .hamburguer-menu.active .menu-links {
     display: flex;
   }
-  
+
   .hamburguer-menu.active .hamburguer-icon span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 6px);
   }
-  
+
   .hamburguer-menu.active .hamburguer-icon span:nth-child(2) {
     opacity: 0;
   }
-  
+
   .hamburguer-menu.active .hamburguer-icon span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -6px);
   }
-  
+
   /* Responsive Design */
   @media (max-width: 768px) {
     #desktop-nav {
       display: none;
     }
-  
+
     #hamburguer-nav {
       display: flex;
       justify-content: space-between;
@@ -142,22 +142,22 @@ body {
       padding: 1rem 2rem;
       width: 100%;
     }
-  
+
     .menu-links {
       width: 100%;
       text-align: left;
     }
   }
-  
+
   @media (min-width: 1200px) {
     nav {
       padding: 1rem 4rem;
     }
-  
+
     .nav-links {
       gap: 2rem;
     }
-  
+
     .nav-links a {
       font-size: 1.1rem;
     }
@@ -167,7 +167,7 @@ body {
     #desktop-nav {
       display: none;
     }
-  
+
     #hamburguer-nav {
       display: flex;
       justify-content: space-between;
@@ -175,7 +175,7 @@ body {
       padding: 1rem 2rem;
       width: 100%;
     }
-  
+
     .menu-links {
       display: none; /* Hidden by default */
       flex-direction: column;
@@ -189,34 +189,34 @@ body {
       border-radius: 5px;
       z-index: 1000;
     }
-  
+
     .menu-links li {
       list-style: none; /* Remove bullet points */
     }
-  
+
     .menu-links a {
       font-size: 1.2rem;
       color: black;
       text-decoration: none;
       transition: color 0.3s, background-color 0.3s;
     }
-  
+
     .menu-links a:hover {
       background-color: grey;
       color: white;
       border-radius: 5px;
     }
-  
+
     .hamburguer-menu.active .menu-links {
       display: flex; /* Show the menu */
     }
   }
-  
+
   /* Ensure Bullet Points for Desktop View */
   .nav-links li {
     list-style: none; /* No bullet points in desktop view */
   }
-  
+
   section{
     padding-top: 4vh;
     height: 96vh;
@@ -497,7 +497,5 @@ footer {
 }
 
 footer p{
-    text-align: center;
-}
     text-align: center;
 }
