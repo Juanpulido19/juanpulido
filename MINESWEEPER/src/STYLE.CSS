@@ -1,56 +1,55 @@
 .container {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #fdfdfd;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .grid {
-    height: 400px;
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #c0c0c0;
-    margin: 20px auto 10px auto;
-    border: 8px solid #999;
-    border-radius: 6px;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #dcd6bc;
+  border: 10px solid #dcd6bc;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .grid div {
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    line-height: 40px;
-    user-select: none;
-    transition: background 0.1s ease;
+  font-size: 25px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.valid, .bomb {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #999;
-    box-sizing: border-box;
-    background-color: #e0e0e0;
-    box-shadow: inset -2px -2px 2px #fff, inset 2px 2px 2px #888;
-    cursor: pointer;
+/* Styling for number colors (classic Minesweeper feel) */
+.grid div[data-number="1"] { color: blue; }
+.grid div[data-number="2"] { color: green; }
+.grid div[data-number="3"] { color: red; }
+.grid div[data-number="4"] { color: navy; }
+.grid div[data-number="5"] { color: maroon; }
+.grid div[data-number="6"] { color: turquoise; }
+.grid div[data-number="7"] { color: black; }
+.grid div[data-number="8"] { color: gray; }
+
+.valid,
+.bomb {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #bab7a9;
+  background: #f5f3eb;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: background 0.2s;
 }
 
-.valid:hover, .bomb:hover {
-    background-color: #d4d4d4;
+.valid:hover {
+  background-color: #e1ddc9;
+  cursor: pointer;
 }
 
-/* Optional: clicked tiles can have a sunken look */
-.clicked {
-    background-color: #ccc;
-    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
-    cursor: default;
-}
-
-/* Optional: reveal bomb */
-.bomb.revealed {
-    background-color: #ff4c4c;
-    color: white;
-}
